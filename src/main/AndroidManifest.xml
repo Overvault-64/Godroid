@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <meta-data
+            android:name="org.godotengine.plugin.v1.GodroidReview"
+            android:value="org.overvault.godroid.Review" />
+
+        <meta-data
+            android:name="org.godotengine.plugin.v1.GodroidToast"
+            android:value="org.overvault.godroid.Toast" />
+
+        <meta-data
+            android:name="org.godotengine.plugin.v1.GodroidShare"
+            android:value="org.overvault.godroid.Share" />
+    </application>
+</manifest>
+
