@@ -19,7 +19,7 @@ This is still a WIP but it already provides the following methods:
 <br>
 
 Installation:
-1. Download the [latest release](https://github.com/overvault-64/Godroid/releases/download/v1.0/godroid.1.0.zip).
+1. Download the [latest release](https://github.com/overvault-64/Godroid/releases/latest).
 2. Put `Godroid.release.aar` and `Godroid.gdap` inside `android/plugins` in your project directory.
 3. Put `godroid.gd` inside `addons` and add it as an Autoload to access its methods.
 
