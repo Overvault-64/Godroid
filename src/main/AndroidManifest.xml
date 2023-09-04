@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
     <application>
         <meta-data
             android:name="org.godotengine.plugin.v1.GodroidReview"
@@ -20,9 +23,6 @@
         <receiver android:name="org.overvault.godroid.NotificationsReceiver" android:process=":remote" />
 
     </application>
-
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
 
 </manifest>
 
