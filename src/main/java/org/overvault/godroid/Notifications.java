@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 
 import org.godotengine.godot.Dictionary;
 import org.godotengine.godot.Godot;
+import org.godotengine.godot.GodotFragment;
 import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.UsedByGodot;
 
@@ -95,14 +96,14 @@ public class Notifications extends GodotPlugin {
 
     private void checkIntent() {
         Log.w(TAG, "I'm going to check application intent");
-        Intent intent = Godot.getCurrentIntent();
+        Intent intent = GodotFragment.getCurrentIntent();
         if(intent == null) {
             Log.d(TAG, "No intent in app activity");
             return;
         }
         Log.w(TAG, "The intent isn't null, so check it closely.");
         if(intent.getExtras() != null) {
-            Bundle extras = Godot.getCurrentIntent().getExtras();
+            Bundle extras = GodotFragment.getCurrentIntent().getExtras();
             Log.d(TAG, "Extras:" + extras.toString());
             notificationData = new Dictionary();
             for (String key : extras.keySet()) {

@@ -1,9 +1,7 @@
 # Project Godroid
-## Android API for Godot 4.x
+## Android API for Godot 4.2
 
 Project "Godroid" aims to add the most important Android features to your Godot 4 game/app.
-
-This is still a WIP but it already provides the following methods:
 
 - `GodroidAPI.display_toast(message : String)` - Displays a toast notification.
 
@@ -22,8 +20,8 @@ This is still a WIP but it already provides the following methods:
 
 Installation:
 1. Download the [latest release](https://github.com/overvault-64/Godroid/releases/latest).
-2. Put `Godroid.release.aar` and `Godroid.gdap` inside `android/plugins` in your project directory.
-3. Put `godroid.gd` inside `addons` and add it as an Autoload to access its methods.
+2. Put `addons` in your project directory and `plugins` in `android`.
+3. Add `godroid.gd` found inside `addons` as an Autoload to access its methods.
 
 <br>
 
