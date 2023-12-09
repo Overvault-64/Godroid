@@ -21,7 +21,7 @@ Project "Godroid" aims to add the most important Android features to your Godot 
 Installation:
 1. Download the [latest release](https://github.com/overvault-64/Godroid/releases/latest).
 2. Put `addons` in your project directory and `plugins` in `android`.
-3. Add `godroid.gd` found inside `addons` as an Autoload to access its methods.
+3. Enable `Godroid` plugin in `Project Settings / Plugins` to access its methods.
 
 <br>
 
