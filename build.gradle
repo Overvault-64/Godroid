@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath 'com.android.tools.build:gradle:8.1.4'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -23,12 +23,12 @@ apply plugin: 'com.android.library'
 android {
     namespace 'org.overvault.godroid'
 
-    compileSdkVersion 33
+    compileSdkVersion 34
 
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 33
+        targetSdkVersion 34
     }
 
     libraryVariants.configureEach { variant ->
@@ -40,8 +40,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.play:review:2.0.1'
 
     compileOnly fileTree('godot-lib')
 }
